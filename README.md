@@ -89,15 +89,13 @@ AethelNet establishes a new Pareto efficiency boundary across latency, parameter
 
 In accordance with our open-source commitment, the **Nano (`aethel_n`)** and **Small (`aethel_s`)** models are released freely under the **Apache 2.0** license:
 
-| Model | Task | Params | GFLOPs | Latency (T4 FP16) | Accuracy | Checkpoint | License |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **`aethel_n`** | 2D Bounding Box | **3.2 M** | **8.4** | **1.12 ms** | 41.2% mAP50-95 | [weights/aethel_n_clean.pt](weights/aethel_n_clean.pt) | **Apache 2.0** |
-| **`aethel_n_fp16`** | 2D Bounding Box (Int8 Ready) | **3.2 M** | **8.4** | **1.12 ms** | 41.2% mAP50-95 | [weights/aethel_n_fp16.pt](weights/aethel_n_fp16.pt) | **Apache 2.0** |
-| **`aethel_s`** | 2D Bounding Box | **9.6 M** | **24.8** | **1.84 ms** | 47.8% mAP50-95 | [weights/aethel_s_clean.pt](weights/aethel_s_clean.pt) | **Apache 2.0** |
-| **`aethel_s_fp16`** | 2D Bounding Box | **9.6 M** | **24.8** | **1.84 ms** | 47.8% mAP50-95 | [weights/aethel_s_fp16.pt](weights/aethel_s_fp16.pt) | **Apache 2.0** |
-| **`aethelnet_s_seg`** | ProtoNet $P_3$ Instance Seg | **11.2 M** | **29.4** | **2.21 ms** | 41.8% mask mAP | [weights/aethelnet_s_seg.pt](weights/aethelnet_s_seg.pt) | **Apache 2.0** |
-| **`aethelnet_s_pose`** | 17-Keypoint Human Pose | **10.8 M** | **27.6** | **2.05 ms** | 53.4% pose mAP | [weights/aethelnet_s_pose.pt](weights/aethelnet_s_pose.pt) | **Apache 2.0** |
-| **`aethelnet_s_obb`** | Trigonometric Rotated Box | **10.4 M** | **26.2** | **1.95 ms** | 50.8% OBB mAP | [weights/aethelnet_s_obb.pt](weights/aethelnet_s_obb.pt) | **Apache 2.0** |
+| Model | Task | Params | FLOPs | Latency (T4) | mAP | Weights |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
+| **`aethel_n`** | 2D Bounding Box | 3.2 M | 8.4 G | 1.12 ms | 41.2% | [FP32](weights/aethel_n_clean.pt) • [FP16](weights/aethel_n_fp16.pt) |
+| **`aethel_s`** | 2D Bounding Box | 9.6 M | 24.8 G | 1.84 ms | 47.8% | [FP32](weights/aethel_s_clean.pt) • [FP16](weights/aethel_s_fp16.pt) |
+| **`aethelnet_s_seg`** | ProtoNet $P_3$ Instance Seg | 11.2 M | 29.4 G | 2.21 ms | 41.8% | [Download](weights/aethelnet_s_seg.pt) |
+| **`aethelnet_s_pose`** | 17-Keypoint Human Pose | 10.8 M | 27.6 G | 2.05 ms | 53.4% | [Download](weights/aethelnet_s_pose.pt) |
+| **`aethelnet_s_obb`** | Trigonometric Rotated Box | 10.4 M | 26.2 G | 1.95 ms | 50.8% | [Download](weights/aethelnet_s_obb.pt) |
 
 > **Enterprise Tiers**: Mid (`aethel_m`, 22M), Large (`aethel_l`, 48M), and Flagship (`aethel_x`, 114M) models are reserved for sovereign defense teleoperation, satellite observation, and enterprise private clusters. Contact `enterprise@aethel.ai` for evaluation access.
 
