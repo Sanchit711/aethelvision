@@ -1,0 +1,11 @@
+# Official PPE Compliance Detection Recipe Specification
+recipe:
+  name: "ppe_compliance"
+  model: "aurelixnet_medium"
+  num_classes: 5
+  classes: ["helmet", "vest", "gloves", "goggles", "boots"]
+  dataset_format: "yolo_txt"
+  epochs: 100
+  batch_size: 32
+  imgsz: [640, 640]
+  recommended_gpus: "1x NVIDIA RTX 4080"

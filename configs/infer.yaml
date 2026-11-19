@@ -1,0 +1,8 @@
+# Aurelix Detector Inference Configuration Manifest
+
+inference:
+  conf_threshold: 0.25
+  iou_threshold: 0.45
+  max_det: 300
+  half_precision: true
+  device: "cuda"

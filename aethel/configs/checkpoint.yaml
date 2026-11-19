@@ -1,0 +1,7 @@
+# Checkpoint Specification
+checkpoint:
+  output_dir: "runs/train"
+  save_period: 5
+  save_best: true
+  save_latest: true
+  max_keep: 5

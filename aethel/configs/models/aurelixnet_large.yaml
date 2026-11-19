@@ -1,0 +1,20 @@
+# AurelixNet-Large Model Specification
+model:
+  name: "aurelixnet_large"
+  family: "AurelixNet"
+  variant: "large"
+  num_classes: 80
+  depth_multiple: 1.00
+  width_multiple: 1.00
+  channels: [128, 256, 512]
+  reg_max: 16
+  act: "silu"
+  norm: "batchnorm"
+  target_parameters: "43.8M"
+  target_gflops: "108.0"
+  backbone:
+    name: "CSPBackbone"
+  neck:
+    name: "PAFPN"
+  head:
+    name: "DecoupledDetectHead"

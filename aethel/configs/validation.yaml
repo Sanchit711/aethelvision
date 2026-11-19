@@ -1,0 +1,9 @@
+# Dataset Validation Configuration Specification
+validation:
+  check_corrupted_images: true
+  check_missing_labels: true
+  check_orphan_images: true
+  check_out_of_bounds_coords: true
+  check_duplicate_annotations: true
+  max_allowed_corrupted_ratio: 0.01
+  num_classes: 80

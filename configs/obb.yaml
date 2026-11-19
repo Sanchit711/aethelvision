@@ -1,0 +1,28 @@
+# Aethel Indigenous Real-Time Oriented Bounding Box Configuration Manifest
+
+task: obb
+architecture: aethel_obb_small
+
+model:
+  num_classes: 15
+  scale: small
+  depth_multiple: 0.33
+  width_multiple: 0.50
+  reg_max: 16
+
+input:
+  height: 640
+  width: 640
+  channels: 3
+
+loss:
+  box_weight: 7.5
+  cls_weight: 0.5
+  dfl_weight: 1.5
+  angle_weight: 2.0
+  probiou_weight: 2.5
+
+inference:
+  conf_threshold: 0.25
+  iou_threshold: 0.45
+  max_det: 300

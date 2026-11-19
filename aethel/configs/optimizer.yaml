@@ -1,0 +1,8 @@
+# Optimizer Specification
+optimizer:
+  name: "AdamW"
+  lr: 0.001
+  weight_decay: 0.0005
+  momentum: 0.9
+  beta1: 0.9
+  beta2: 0.999

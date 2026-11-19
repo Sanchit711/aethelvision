@@ -1,0 +1,11 @@
+# Official Helmet Safety Detection Recipe Specification
+recipe:
+  name: "helmet_detection"
+  model: "aurelixnet_tiny"
+  num_classes: 2
+  classes: ["helmet", "no_helmet"]
+  dataset_format: "yolo_txt"
+  epochs: 60
+  batch_size: 16
+  imgsz: [640, 640]
+  recommended_gpus: "1x NVIDIA Jetson Orin / RTX 3050"

@@ -1,0 +1,11 @@
+# Official Fire & Smoke Detection Recipe Specification
+recipe:
+  name: "fire_smoke_safety"
+  model: "aurelixnet_small"
+  num_classes: 2
+  classes: ["fire", "smoke"]
+  dataset_format: "yolo_txt"
+  epochs: 80
+  batch_size: 16
+  imgsz: [640, 640]
+  recommended_gpus: "1x NVIDIA RTX 3060"

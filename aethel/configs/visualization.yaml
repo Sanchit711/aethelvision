@@ -1,0 +1,7 @@
+# Visualization Specification
+visualization:
+  line_width: 2
+  show_labels: true
+  show_conf: true
+  font_size: 14
+  color_mode: "class"

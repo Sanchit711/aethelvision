@@ -1,0 +1,123 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+dist_protected/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Deep Learning weights, checkpoints & exports
+*.pth
+*.pwf
+*.engine
+*.mlpackage
+*.torchscript
+*.tflite
+*.bin
+*.xml
+
+# Datasets & Local Media (Heavy files)
+data/
+dataset_micro/
+comparison_overlays/
+comparison_overlays_epoch40/
+ground_truth_overlays/
+prediction_overlays/
+prediction_overlays_epoch40/
+archive/
+backups/
+checkpoints/
+runs/
+exports/
+export/
+scratch/
+graphify-out/
+.agents/
+experiments/
+evaluation/
+reports/
+projects/
+trainer/
+deployment/
+plugins/
+weights_enterprise/
+
+# Legacy development packages (superseded by aethel & aethel_detector)
+mhyra/
+mhyra_detector/
+aurelix/
+aurelix_detector/
+
+# General binary model ignore
+*.pt
+*.onnx
+
+# Whitelist Open-Source Apache 2.0 Nano & Small weights
+!weights/
+!weights/README.md
+!weights/aethel_n_clean.pt
+!weights/aethel_n_fp16.pt
+!weights/aethel_s_clean.pt
+!weights/aethel_s_fp16.pt
+!weights/aethelnet_s.pt
+!weights/aethelnet_s_seg.pt
+!weights/aethelnet_s_pose.pt
+!weights/aethelnet_s_obb.pt
+
+# Ephemeral debug images and training curves in root
+debug_*.jpg
+debug_input.jpg
+prediction.jpg
+github_auth_code.txt
+confusion_matrix*.png
+cpu_usage*.png
+loss_curve*.png
+map50*.png
+map5095*.png
+precision_curve*.png
+ram_usage*.png
+recall_curve*.png
+*.csv
+*.html
+
+# License & Secrets
+configs/license.key
+*.key
+
+# IDE & OS files
+.DS_Store
+.idea/
+.vscode/
+Thumbs.db
+*.log
+logs/
+
+.github/workflows/

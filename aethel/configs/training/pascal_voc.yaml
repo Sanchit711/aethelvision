@@ -1,0 +1,20 @@
+# Pascal VOC Dataset Training Specification
+dataset:
+  name: "PascalVOC"
+  path: "datasets/voc"
+  train_split: "trainval"
+  val_split: "test"
+  num_classes: 20
+  format: "pascal_voc"
+
+training:
+  epochs: 100
+  batch_size: 32
+  imgsz: [512, 512]
+  optimizer:
+    name: "AdamW"
+    lr: 0.001
+    weight_decay: 0.0005
+  scheduler:
+    name: "CosineAnnealingLR"
+    min_lr: 0.00001

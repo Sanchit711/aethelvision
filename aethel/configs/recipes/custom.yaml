@@ -1,0 +1,11 @@
+# Generic Custom Dataset Recipe Specification Template
+recipe:
+  name: "custom_detection"
+  model: "aurelixnet_small"
+  num_classes: 1
+  classes: ["custom_object"]
+  dataset_format: "auto"
+  epochs: 50
+  batch_size: 16
+  imgsz: [640, 640]
+  recommended_gpus: "1x NVIDIA GPU"

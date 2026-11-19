@@ -1,0 +1,21 @@
+# Dataset Configuration Specification
+dataset:
+  name: "default_dataset"
+  format: "yolo"
+  path: "datasets/default"
+  num_classes: 80
+  classes:
+    - person
+    - bicycle
+    - car
+    - motorcycle
+  train: "images/train"
+  val: "images/val"
+  test: "images/test"
+  imgsz: 640
+  batch_size: 16
+  num_workers: 4
+  augmentations:
+    hflip: 0.5
+    mosaic: 1.0
+    mixup: 0.1

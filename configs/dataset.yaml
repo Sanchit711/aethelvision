@@ -1,0 +1,30 @@
+# Aurelix Detector Dataset and Augmentation Configuration Manifest
+
+dataset:
+  format: "yolo"              # yolo, coco, voc, custom
+  img_dir: "datasets/coco/images"
+  label_dir: "datasets/coco/labels"
+  img_size: [640, 640]
+  max_gt: 50
+  cache_mode: "none"          # ram, disk, none
+
+augmentations:
+  letterbox: true
+  hflip_prob: 0.5
+  vflip_prob: 0.0
+  hsv_jitter: true
+  hsv_hgain: 0.015
+  hsv_sgain: 0.7
+  hsv_vgain: 0.4
+  affine: true
+  degrees: 0.0
+  translate: 0.1
+  scale: 0.1
+  mosaic_prob: 0.5
+  mixup_prob: 0.1
+
+splitting:
+  train_ratio: 0.8
+  val_ratio: 0.1
+  test_ratio: 0.1
+  seed: 42

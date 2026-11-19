@@ -1,0 +1,30 @@
+# Aethel Indigenous Real-Time Pose Estimation Configuration Manifest
+
+task: pose
+architecture: aethel_pose_small
+
+model:
+  num_classes: 1
+  num_keypoints: 17
+  scale: small
+  depth_multiple: 0.33
+  width_multiple: 0.50
+  reg_max: 16
+
+input:
+  height: 640
+  width: 640
+  channels: 3
+
+loss:
+  box_weight: 7.5
+  cls_weight: 0.5
+  dfl_weight: 1.5
+  kpt_weight: 12.0
+  kpt_vis_weight: 1.0
+
+inference:
+  conf_threshold: 0.25
+  iou_threshold: 0.45
+  kpt_conf_threshold: 0.30
+  max_det: 300

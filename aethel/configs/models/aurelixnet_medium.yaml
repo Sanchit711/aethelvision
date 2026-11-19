@@ -1,0 +1,20 @@
+# AurelixNet-Medium Model Specification
+model:
+  name: "aurelixnet_medium"
+  family: "AurelixNet"
+  variant: "medium"
+  num_classes: 80
+  depth_multiple: 0.67
+  width_multiple: 0.75
+  channels: [96, 192, 384]
+  reg_max: 16
+  act: "silu"
+  norm: "batchnorm"
+  target_parameters: "22.5M"
+  target_gflops: "48.6"
+  backbone:
+    name: "CSPBackbone"
+  neck:
+    name: "PAFPN"
+  head:
+    name: "DecoupledDetectHead"

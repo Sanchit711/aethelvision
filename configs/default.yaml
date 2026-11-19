@@ -1,0 +1,14 @@
+# Aurelix Detector Default Configuration Manifest
+
+model:
+  num_classes: 80
+  depth_multiple: 1.0
+  width_multiple: 1.0
+  in_channels: 3
+
+input:
+  height: 640
+  width: 640
+  channels: 3
+
+device: "cpu"

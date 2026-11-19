@@ -1,0 +1,21 @@
+# COCO Dataset Training Specification
+dataset:
+  name: "COCO2017"
+  path: "datasets/coco"
+  train_split: "train2017"
+  val_split: "val2017"
+  num_classes: 80
+  format: "coco_json"
+
+training:
+  epochs: 300
+  batch_size: 64
+  imgsz: [640, 640]
+  optimizer:
+    name: "AdamW"
+    lr: 0.001
+    weight_decay: 0.0005
+  scheduler:
+    name: "CosineAnnealingLR"
+    min_lr: 0.00001
+    warmup_epochs: 3

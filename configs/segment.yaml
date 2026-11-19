@@ -1,0 +1,31 @@
+# Aethel Indigenous Real-Time Instance Segmentation Configuration Manifest
+
+task: segment
+architecture: aethel_segment_small
+
+model:
+  num_classes: 80
+  num_protos: 32
+  scale: small
+  depth_multiple: 0.33
+  width_multiple: 0.50
+  reg_max: 16
+
+input:
+  height: 640
+  width: 640
+  channels: 3
+
+loss:
+  box_weight: 7.5
+  cls_weight: 0.5
+  dfl_weight: 1.5
+  mask_weight: 2.5
+  dice_weight: 1.0
+
+inference:
+  conf_threshold: 0.25
+  iou_threshold: 0.45
+  mask_threshold: 0.50
+  mask_alpha: 0.45
+  max_det: 300

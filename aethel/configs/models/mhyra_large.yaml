@@ -1,0 +1,16 @@
+# Aurelix Detector Large Model Specification
+model:
+  name: "AurelixDetector"
+  scale: "large"
+  num_classes: 80
+  depth_multiple: 1.00
+  width_multiple: 1.00
+  reg_max: 16
+  backbone:
+    name: "CSPBackbone"
+    in_channels: 3
+  neck:
+    name: "PAFPN"
+  head:
+    name: "DecoupledDetectHead"
+    strides: [8, 16, 32]

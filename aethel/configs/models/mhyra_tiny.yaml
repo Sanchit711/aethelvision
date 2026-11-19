@@ -1,0 +1,16 @@
+# Aurelix Detector Tiny Model Specification
+model:
+  name: "AurelixDetector"
+  scale: "tiny"
+  num_classes: 80
+  depth_multiple: 0.33
+  width_multiple: 0.25
+  reg_max: 16
+  backbone:
+    name: "CSPBackbone"
+    in_channels: 3
+  neck:
+    name: "PAFPN"
+  head:
+    name: "DecoupledDetectHead"
+    strides: [8, 16, 32]

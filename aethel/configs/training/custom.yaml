@@ -1,0 +1,15 @@
+# Generic Custom Dataset Training Specification Template
+dataset:
+  name: "CustomDataset"
+  path: "datasets/custom"
+  num_classes: 1
+  classes: ["target_object"]
+  format: "auto"
+
+training:
+  epochs: 50
+  batch_size: 16
+  imgsz: [640, 640]
+  optimizer:
+    name: "AdamW"
+    lr: 0.001

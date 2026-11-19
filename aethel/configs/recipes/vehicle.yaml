@@ -1,0 +1,11 @@
+# Official Vehicle & Traffic Monitoring Recipe Specification
+recipe:
+  name: "vehicle_traffic"
+  model: "aurelixnet_medium"
+  num_classes: 4
+  classes: ["car", "truck", "bus", "motorcycle"]
+  dataset_format: "coco_json"
+  epochs: 120
+  batch_size: 32
+  imgsz: [640, 640]
+  recommended_gpus: "1x NVIDIA RTX 4090"

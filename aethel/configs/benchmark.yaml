@@ -1,0 +1,8 @@
+# Benchmark Specification
+benchmark:
+  warmup_iters: 10
+  benchmark_iters: 50
+  batch_size: 1
+  input_shape: [1, 3, 640, 640]
+  device: "cpu"
+  output_dir: "runs/benchmark"

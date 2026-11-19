@@ -1,0 +1,20 @@
+# AurelixNet-Small Model Specification
+model:
+  name: "aurelixnet_small"
+  family: "AurelixNet"
+  variant: "small"
+  num_classes: 80
+  depth_multiple: 0.33
+  width_multiple: 0.50
+  channels: [64, 128, 256]
+  reg_max: 16
+  act: "silu"
+  norm: "batchnorm"
+  target_parameters: "7.2M"
+  target_gflops: "16.2"
+  backbone:
+    name: "CSPBackbone"
+  neck:
+    name: "PAFPN"
+  head:
+    name: "DecoupledDetectHead"

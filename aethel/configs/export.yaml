@@ -1,0 +1,7 @@
+# Export Specification
+export:
+  format: "onnx"
+  opset_version: 12
+  input_shape: [1, 3, 640, 640]
+  dynamic_shapes: true
+  output_dir: "runs/export"

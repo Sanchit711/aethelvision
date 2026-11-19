@@ -1,0 +1,15 @@
+# Fire & Smoke Safety Detection Training Specification
+dataset:
+  name: "FireAndSmoke"
+  path: "datasets/fire_smoke"
+  num_classes: 2
+  classes: ["fire", "smoke"]
+  format: "yolo_txt"
+
+training:
+  epochs: 80
+  batch_size: 16
+  imgsz: [640, 640]
+  optimizer:
+    name: "AdamW"
+    lr: 0.0005

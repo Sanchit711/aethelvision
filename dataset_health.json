@@ -1,0 +1,14 @@
+{
+  "total_samples": 1,
+  "valid_samples": 1,
+  "corrupted_images": [],
+  "missing_images": [],
+  "missing_labels": [],
+  "empty_txt": [],
+  "orphan_labels": [],
+  "invalid_annotations": [],
+  "duplicate_annotations": [],
+  "errors_count": 0,
+  "warnings_count": 0,
+  "status": "PASSED"
+}

@@ -1,0 +1,15 @@
+# Official Pascal VOC Training Recipe Specification
+recipe:
+  name: "pascal_voc_detection"
+  model: "aurelixnet_small"
+  num_classes: 20
+  dataset_format: "pascal_voc"
+  epochs: 100
+  batch_size: 32
+  imgsz: [512, 512]
+  recommended_gpus: "1x NVIDIA RTX 3090"
+  optimizer:
+    name: "AdamW"
+    lr: 0.001
+  scheduler:
+    name: "CosineAnnealingLR"

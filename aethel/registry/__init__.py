@@ -1,0 +1,45 @@
+"""Aethel Registry Submodule."""
+
+from aethel.registry.registry import (
+    Registry,
+    DATASET_REGISTRY,
+    MODEL_REGISTRY,
+    BACKBONE_REGISTRY,
+    NECK_REGISTRY,
+    HEAD_REGISTRY,
+    LAYER_REGISTRY,
+    LOSS_REGISTRY,
+    TRAINER_REGISTRY,
+    METRIC_REGISTRY,
+    PREDICTOR_REGISTRY,
+    EXPORTER_REGISTRY,
+    OPTIMIZER_REGISTRY,
+    SCHEDULER_REGISTRY,
+    CALLBACK_REGISTRY,
+    VISUALIZER_REGISTRY,
+)
+from aethel.registry.task_registry import TASK_REGISTRY, TaskRegistryContainer, TaskSpec
+
+TASK_REGISTRY = TASK_REGISTRY
+
+__all__ = [
+    "Registry",
+    "DATASET_REGISTRY",
+    "MODEL_REGISTRY",
+    "BACKBONE_REGISTRY",
+    "NECK_REGISTRY",
+    "HEAD_REGISTRY",
+    "LAYER_REGISTRY",
+    "LOSS_REGISTRY",
+    "TRAINER_REGISTRY",
+    "METRIC_REGISTRY",
+    "PREDICTOR_REGISTRY",
+    "EXPORTER_REGISTRY",
+    "OPTIMIZER_REGISTRY",
+    "SCHEDULER_REGISTRY",
+    "CALLBACK_REGISTRY",
+    "VISUALIZER_REGISTRY",
+    "TASK_REGISTRY",
+    "TaskRegistryContainer",
+    "TaskSpec",
+]

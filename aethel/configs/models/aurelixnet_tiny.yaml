@@ -1,0 +1,20 @@
+# AurelixNet-Tiny Model Specification
+model:
+  name: "aurelixnet_tiny"
+  family: "AurelixNet"
+  variant: "tiny"
+  num_classes: 80
+  depth_multiple: 0.33
+  width_multiple: 0.25
+  channels: [32, 64, 128]
+  reg_max: 16
+  act: "silu"
+  norm: "batchnorm"
+  target_parameters: "1.8M"
+  target_gflops: "4.5"
+  backbone:
+    name: "CSPBackbone"
+  neck:
+    name: "PAFPN"
+  head:
+    name: "DecoupledDetectHead"

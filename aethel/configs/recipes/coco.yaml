@@ -1,0 +1,29 @@
+# Official COCO 2017 Training Recipe Specification
+recipe:
+  name: "coco_detection"
+  model: "aurelixnet_medium"
+  num_classes: 80
+  dataset_format: "coco_json"
+  epochs: 300
+  batch_size: 64
+  imgsz: [640, 640]
+  recommended_gpus: "4x NVIDIA RTX 4090 / A100"
+  optimizer:
+    name: "AdamW"
+    lr: 0.001
+    weight_decay: 0.0005
+  scheduler:
+    name: "CosineAnnealingLR"
+    min_lr: 0.00001
+    warmup_epochs: 3
+  loss:
+    box_weight: 7.5
+    cls_weight: 0.5
+    dfl_weight: 1.5
+    iou_type: "ciou"
+  augmentation:
+    hflip: 0.5
+    letterbox: true
+    hsv_h: 0.015
+    hsv_s: 0.7
+    hsv_v: 0.4

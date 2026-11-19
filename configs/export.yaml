@@ -1,0 +1,9 @@
+# Aurelix Detector Export Configuration Manifest
+
+export:
+  format: "onnx"
+  opset_version: 17
+  precision: "fp16"
+  dynamic_axes: true
+  workspace_size_gb: 4
+  output_dir: "exports"

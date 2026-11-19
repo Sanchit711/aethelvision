@@ -1,0 +1,11 @@
+# Official Automatic License Plate Recognition (ALPR) Recipe Specification
+recipe:
+  name: "license_plate"
+  model: "aurelixnet_tiny"
+  num_classes: 1
+  classes: ["license_plate"]
+  dataset_format: "yolo_txt"
+  epochs: 80
+  batch_size: 16
+  imgsz: [512, 512]
+  recommended_gpus: "1x NVIDIA Jetson Nano / Orin Nano"

@@ -1,0 +1,6 @@
+# Experiment Tracking Configuration Specification
+experiment:
+  name: "baseline_detection_run"
+  project: "aurelix_vision_v1"
+  tags: ["object_detection", "baseline"]
+  notes: "Architecture constitution restructuring verification run."

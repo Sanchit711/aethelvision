@@ -1,0 +1,15 @@
+# Personal Protective Equipment (PPE) Compliance Training Specification
+dataset:
+  name: "PPECompliance"
+  path: "datasets/ppe"
+  num_classes: 5
+  classes: ["helmet", "vest", "gloves", "goggles", "boots"]
+  format: "yolo_txt"
+
+training:
+  epochs: 100
+  batch_size: 16
+  imgsz: [640, 640]
+  optimizer:
+    name: "AdamW"
+    lr: 0.001
